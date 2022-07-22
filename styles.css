@@ -89,15 +89,18 @@ button {
     border-radius: 5px;
     padding: 5px 25px;
     box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.5);
-    background-color:rgb(191, 224, 255);
+    background-color: rgb(191, 224, 255);
 }
 
 button:hover {
-    background-color:rgb(148, 199, 246);
+    background-color: rgb(148, 199, 246);
 }
 
 button:active {
-    background-color:rgb(122, 184, 242);
+    background-color: rgb(122, 184, 242);
+    -webkit-box-shadow: inset 2px 3px 8px rgb(46, 104, 159);
+    -moz-box-shadow: inset 2px 3px 8px rgb(46, 104, 159);
+    box-shadow: inset 2px 3px 8px rgb(46, 104, 159);
 }
 
 
@@ -116,6 +119,9 @@ button:active {
 
 .clear:active {
     background-color: rgb(247, 138, 162);
+    -webkit-box-shadow: inset 2px 3px 8px rgb(194, 81, 106);
+    -moz-box-shadow: inset 2px 3px 8px rgb(194, 81, 106);
+    box-shadow: inset 2px 3px 8px rgb(194, 81, 106);
 }
 
 .delete {
@@ -128,6 +134,9 @@ button:active {
 
 .delete:active {
     background-color: rgb(195, 142, 245);
+    -webkit-box-shadow: inset 2px 3px 8px rgb(144, 98, 186);
+    -moz-box-shadow: inset 2px 3px 8px rgb(144, 98, 186);
+    box-shadow: inset 2px 3px 8px rgb(144, 98, 186);
 }
 
 .zero,
@@ -166,7 +175,10 @@ button:active {
 .seven:active,
 .eight:active,
 .nine:active {
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(210, 209, 209);
+    -webkit-box-shadow: inset 2px 3px 8px rgb(130, 130, 130);
+    -moz-box-shadow: inset 2px 3px 8px rgb(130, 130, 130);
+    box-shadow: inset 2px 3px 8px rgb(130, 130, 130);
 }
 
 
