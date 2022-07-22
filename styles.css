@@ -1,3 +1,17 @@
+/* benchnine-regular - latin */
+@font-face {
+    font-family: 'BenchNine';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./resources/font/benchnine-v16-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./resources/font/benchnine-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./resources/font/benchnine-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./resources/font/benchnine-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./resources/font/benchnine-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./resources/font/benchnine-v16-latin-regular.svg#BenchNine') format('svg'); /* Legacy iOS */
+}
+
 *,
 *::before,
 *::after {
@@ -9,6 +23,12 @@
 html {
   position: relative;
   min-height: 100%;
+}
+
+body {
+    background-color: lightseagreen;
+    margin-bottom: 100px;
+    font-family: 'Amatic SC', sans-serif;
 }
 
 .container {
