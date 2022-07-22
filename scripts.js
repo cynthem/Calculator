@@ -18,3 +18,22 @@ const sevenBtn = document.querySelector('.seven');
 const eightBtn = document.querySelector('.eight');
 const nineBtn = document.querySelector('.nine');
 const zeroBtn = document.querySelector('.zero');
+
+clearBtn.onclick = () => clearDisplay();
+deleteBtn.onclick = () => updateDisplay('delete');
+addBtn.onmousedown = () => updateDisplay(addBtn.innerHTML);
+
+function clearDisplay() {
+    displayTop.innerHTML = '';
+    displayBottom.innerHTML = '';
+}
+
+function updateDisplay(character) {
+    if (character === 'delete') {
+        let textInput = displayBottom.innerHTML;
+        textInput = textInput.slice(0, -1);
+        displayBottom.innerHTML = `${textInput}`;
+    } else {
+        displayBottom.innerHTML = `${character}`;
+    }
+}
