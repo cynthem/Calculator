@@ -92,6 +92,15 @@ button {
     background-color:rgb(191, 224, 255);
 }
 
+button:hover {
+    background-color:rgb(148, 199, 246);
+}
+
+button:active {
+    background-color:rgb(122, 184, 242);
+}
+
+
 .clear,
 .delete {
     grid-column: span 2;
@@ -101,8 +110,24 @@ button {
     background-color: rgb(250, 190, 203);
 }
 
+.clear:hover {
+    background-color: rgb(246, 159, 178);
+}
+
+.clear:active {
+    background-color: rgb(247, 138, 162);
+}
+
 .delete {
     background-color: rgb(221, 191, 250);
+}
+
+.delete:hover {
+    background-color: rgb(203, 161, 243);
+}
+
+.delete:active {
+    background-color: rgb(195, 142, 245);
 }
 
 .zero,
@@ -116,6 +141,32 @@ button {
 .eight,
 .nine {
     background-color: white;
+}
+
+.zero:hover,
+.one:hover,
+.two:hover,
+.three:hover,
+.four:hover,
+.five:hover,
+.six:hover,
+.seven:hover,
+.eight:hover,
+.nine:hover {
+    background-color: rgb(222, 222, 222);
+}
+
+.zero:active,
+.one:active,
+.two:active,
+.three:active,
+.four:active,
+.five:active,
+.six:active,
+.seven:active,
+.eight:active,
+.nine:active {
+    background-color: rgb(190, 190, 190);
 }
 
 
