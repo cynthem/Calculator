@@ -28,7 +28,7 @@ html {
 body {
     background-color: lightseagreen;
     margin-bottom: 100px;
-    font-family: 'Amatic SC', sans-serif;
+    font-family: 'BenchNine', sans-serif;
 }
 
 .container {
@@ -37,6 +37,9 @@ body {
     align-items: center;
     justify-content: center;
     height: 80vh;
+    min-height: 500px;
+    padding: 10px;
+    margin-top: 50px;
 }
 
 /* Calculator */
@@ -44,7 +47,35 @@ body {
 .calculator {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+    width: 350px;
+    border: 2px solid black;
+    background-color: crimson;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.display {
+    border: 2px solid black;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.clear-delete {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    font-family: 'BenchNine', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
 }
 
 .numbers-operators {
@@ -65,5 +96,5 @@ body {
     gap: 10px;
     width: 100%;
     padding: 15px;
-    font-size: 18px;
+    font-size: 20px;
   }
