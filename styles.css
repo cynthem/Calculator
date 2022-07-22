@@ -54,7 +54,7 @@ body {
 
 .display {
     border: 2px solid black;
-    background-color: rgb(221, 221, 221);
+    background-color: white;
     border-radius: 5px;
     padding: 12px 20px 0px 20px;
     margin-bottom: 20px;
@@ -89,11 +89,33 @@ button {
     border-radius: 5px;
     padding: 5px 25px;
     box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.5);
+    background-color:rgb(191, 224, 255);
 }
 
 .clear,
 .delete {
     grid-column: span 2;
+}
+
+.clear {
+    background-color: rgb(250, 190, 203);
+}
+
+.delete {
+    background-color: rgb(221, 191, 250);
+}
+
+.zero,
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine {
+    background-color: white;
 }
 
 
