@@ -2,12 +2,15 @@ const displayTop = document.querySelector('.display-top');
 const displayBottom = document.querySelector('.display-bottom');
 const clearBtn = document.querySelector('.clear');
 const deleteBtn = document.querySelector('.delete');
+const equalBtn = document.querySelector('.equal');
+const allButtons = document.querySelectorAll('.key');
+
 const addBtn = document.querySelector('.add');
 const substractBtn = document.querySelector('.subtract');
 const multiplyBtn = document.querySelector('.multiply');
 const divideBtn = document.querySelector('.divide');
 const decimalBtn = document.querySelector('.decimal');
-const equalBtn = document.querySelector('.equal');
+
 const oneBtn = document.querySelector('.one');
 const twoBtn = document.querySelector('.two');
 const threeBtn = document.querySelector('.three');
@@ -20,20 +23,21 @@ const nineBtn = document.querySelector('.nine');
 const zeroBtn = document.querySelector('.zero');
 
 clearBtn.onclick = () => clearDisplay();
-deleteBtn.onclick = () => updateDisplay('delete');
-addBtn.onmousedown = () => updateDisplay(addBtn.innerHTML);
+deleteBtn.onclick = () => backspace();
+allButtons.forEach((button) => 
+    button.addEventListener('click', () => updateDisplay(button.textContent))
+);
 
 function clearDisplay() {
-    displayTop.innerHTML = '';
-    displayBottom.innerHTML = '';
+    displayTop.textContent = '';
+    displayBottom.textContent = '';
 }
 
-function updateDisplay(character) {
-    if (character === 'delete') {
-        let textInput = displayBottom.innerHTML;
-        textInput = textInput.slice(0, -1);
-        displayBottom.innerHTML = `${textInput}`;
-    } else {
-        displayBottom.innerHTML = `${character}`;
-    }
+function backspace() {
+    displayBottom.innerText = displayBottom.innerText.slice(0, -1);
+}
+
+function updateDisplay(text) {
+    currentDisplay = displayBottom.textContent;
+    displayBottom.textContent = `${currentDisplay} ${text}`;
 }
