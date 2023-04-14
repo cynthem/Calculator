@@ -1,6 +1,6 @@
 # Calculator
 > A web page with a cute little calculator that can perform addition, subtraction, multiplication, and division, and rounds to the nearest thousandth. This project was completed as part of The Odin Project's Foundations curriculum.
-Live demo [_here_](https://doozles411.github.io/Calculator/).
+Live demo [_here_](https://cynthem.github.io/Calculator/).
 
 ## Room for Improvement
 To do:
